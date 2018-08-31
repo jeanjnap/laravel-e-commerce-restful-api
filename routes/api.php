@@ -24,3 +24,4 @@ Route::group(['prefix' => 'products'], function() {
 });
 
 Route::post('mail', array('uses' => 'MailController@send'));
+Route::post('files', array('uses' => 'UploadController@save'));
